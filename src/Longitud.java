@@ -1,9 +1,21 @@
+import java.nio.file.SimpleFileVisitor;
+
 public class Longitud {
     public static void main(String[] args) {
-        String fs="Hola que tal.";
-        System.out.println(fs.length());
-        System.out.println(fs.charAt(fs.length()-1));
-        System.out.println(fs.valueOf(4).length());
+        String fr = "hola que tal";
+        int k = 0;
+        System.out.println(comprueba(fr, k));
 
+    }
+
+    public static int comprueba(String fr, int k) {
+        String[] pal = fr.split(" \\s");
+        int cuantas=0;
+        for (int i = 0; i <pal.length ; i++) {
+            if (pal[i].length()==k) {
+                cuantas++;
+            }
+        }
+        return cuantas;
     }
 }
