@@ -1,7 +1,5 @@
 import jdk.swing.interop.SwingInterOpUtils;
-
 import java.util.Locale;
-
 public class Nombreusuario {
     public static void main(String[] args) {
         String sc="Anlox Caicoya Tirado";
@@ -13,5 +11,16 @@ public class Nombreusuario {
 
         }
         System.out.println(nomform);
+        for (int i = 0; i < par.length; i++) {
+            System.out.print(par[i].substring(0,1)+".");
+
+
+        }
+        System.out.println();
+        String usuario= par[0].substring(0,1);
+        usuario+=par[1];
+        usuario+=par[2].substring(0,1);
+        usuario=usuario.toLowerCase();
+        System.out.println(usuario);
     }
 }

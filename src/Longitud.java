@@ -3,5 +3,7 @@ public class Longitud {
         String fs="Hola que tal.";
         System.out.println(fs.length());
         System.out.println(fs.charAt(fs.length()-1));
+        System.out.println(fs.valueOf(4).length());
+
     }
 }
