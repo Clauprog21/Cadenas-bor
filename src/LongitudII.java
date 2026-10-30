@@ -2,7 +2,7 @@ public class LongitudII {
     public static void main(String[] args) {
         String fs = "Tengo una buena migraña";
         int k = 6;
-        String[] pal = fs.split(" ");
+        String[] pal = fs.split(" \\s+");
         boolean expal = false;
         for (int i = 0; i < pal.length; i++) {
             if (pal[i].length() > k) {
@@ -18,7 +18,7 @@ public class LongitudII {
     }
 
     public static boolean comprueba(String fr, int k) {
-        String[] pal = fr.split("  ");
+        String[] pal = fr.split("\\s+");
         boolean expal = false;
         for (int i = 0; i < pal.length; i++) {
             if (pal[i].length() == k) {

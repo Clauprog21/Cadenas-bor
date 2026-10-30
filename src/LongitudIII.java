@@ -3,7 +3,7 @@ public class LongitudIII {
         String fs="Longitud de nilo";
         int k= 6;
         boolean hayalgmlar=false;
-        String[] pal=fs.split(" \\s+");
+        String[] pal=fs.split(" \\s");
         for (int i = 0; i < pal.length; i++) {
             if (pal[i].length()>=k){
                 hayalgmlar=true;
@@ -17,7 +17,7 @@ public class LongitudIII {
         }
     }
     public static boolean comprueba(String fr, int k) {
-        String[] pal = fr.split(" \\s+ ");
+        String[] pal = fr.split(" \\s");
         boolean hayalgmlar = false;
         for (int i = 0; i < pal.length; i++) {
             if (pal[i].length() == k) {
