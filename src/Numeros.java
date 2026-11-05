@@ -1,33 +1,38 @@
 public class Numeros {
     public static void main(String[] args) {
-        String pal = "140";
-        int con = 0;
+        String fs = "140";
+        String cd = "140 5634 3452 2f34rf";
+        String[] pal = cd.split("\\s+");
         boolean esnum = true;
-        for (int j = 0; j < pal.length(); j++) {
-            if (!Character.isDigit(pal.charAt(j))) {
-                esnum = false;
-                break;
+        int cont=0;
+        for (int i = 0; i < fs.length(); i++) {
+            System.out.println(pal[i]);
+            String palact=pal[i];
+            for (int j = 0; j < palact.length(); j++) {
+                if (!Character.isDigit(palact.charAt(j))) {
+                    esnum = false;
+                    break;
+                }
+
             }
             if (esnum) {
-                con++;
+                cont++;
             }
         }
-        System.out.println(con);
+        System.out.println(cont);
     }
-    //PELÍCULA MAXIMA.
-    public static boolean ContarNumeros(int con,String pal) {
-        String[] num = pal.split(" \\s+");
-        int cot = 0;
-        boolean esnum = true;
-        for (int i = 0; i < num.length; i++) {
-            if (!Character.isDigit(num[i].charAt(0))) {
-                esnum = false;
-                break;
+    // película maxíma
+    public static boolean contarNumeros(String cd, int cont){
+        String[] pal = cd.split(" ");
+        for (int i = 0; i < pal.length; i++){
+            if (pal[i].equals(cont)){
+                return true;
+
             }
         }
-        if (esnum) {
-            con++;
-        }
-        return con == cot;
+        return false;
+
+
     }
+
 }
