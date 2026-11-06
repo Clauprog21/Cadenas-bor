@@ -5,9 +5,7 @@ public class Longitud {
         String fr = "hola que tal";
         int k = 0;
         System.out.println(comprueba(fr, k));
-
     }
-
     public static int comprueba(String fr, int k) {
         String[] pal = fr.split(" \\s");
         int cuantas=0;

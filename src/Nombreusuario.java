@@ -8,13 +8,10 @@ public class Nombreusuario {
         for (int i = 0; i < par.length; i++) {
             nomform+=par[i].substring(0,1).toUpperCase();
             nomform+=par[i].substring(1)+par[i].substring(0,1).toLowerCase() + " ";
-
         }
         System.out.println(nomform);
         for (int i = 0; i < par.length; i++) {
             System.out.print(par[i].substring(0,1)+".");
-
-
         }
         System.out.println();
         String usuario= par[0].substring(0,1);

@@ -6,13 +6,7 @@ public class Invertida {
         int cont=0;
         for (int i = 0; i < fs.length(); i++) {
             if (fs.charAt(i) == 's') {
-                
-
-
             }
-
-
-
         }
     }
 }

@@ -7,7 +7,6 @@ public class LongitudII {
         for (int i = 0; i < pal.length; i++) {
             if (pal[i].length() > k) {
                 expal = true;
-
             }
         }
         if (expal) {
@@ -16,7 +15,6 @@ public class LongitudII {
             System.out.println(" noexpal con" + k + " carac");
         }
     }
-
     public static boolean comprueba(String fr, int k) {
         String[] pal = fr.split("\\s+");
         boolean expal = false;

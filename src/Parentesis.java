@@ -33,9 +33,7 @@ public class Parentesis {
             if (cont == 0) {
                 return true;
             }
-
         }
         return false;
-
     }
 }

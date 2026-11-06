@@ -13,7 +13,6 @@ public class Numeros {
                     esnum = false;
                     break;
                 }
-
             }
             if (esnum) {
                 cont++;
@@ -27,12 +26,8 @@ public class Numeros {
         for (int i = 0; i < pal.length; i++){
             if (pal[i].equals(cont)){
                 return true;
-
             }
         }
         return false;
-
-
     }
-
 }

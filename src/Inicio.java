@@ -10,7 +10,6 @@ public class Inicio {
             System.out.println("Si");
         }else  {
             System.out.println("No");
-
         }
         sc="hola";
         System.out.println(sc.indexOf("a"));

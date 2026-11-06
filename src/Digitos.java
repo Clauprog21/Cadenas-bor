@@ -5,9 +5,7 @@ public class Digitos {
         for (int i = 0; i < fs.length()-1; i++) {
             if (Character.isDigit(fs.charAt(i))) {
                 dig++;
-
             }
-
         }
         System.out.println("hay dig: " + dig);
     }

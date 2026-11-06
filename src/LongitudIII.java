@@ -8,7 +8,6 @@ public class LongitudIII {
             if (pal[i].length()>=k){
                 hayalgmlar=true;
             }
-
         }
         if (hayalgmlar){
             System.out.println("Hay alguna mas larga");
